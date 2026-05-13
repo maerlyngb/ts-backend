@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s *localhost:*)",
+      "Bash(echo *)",
+      "Bash(find *)",
+      "Bash(lsof -ti:*)",
+      "Bash(mkdir -p *)",
+      "Bash(npm audit *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npm view *)"
+    ]
+  }
+}

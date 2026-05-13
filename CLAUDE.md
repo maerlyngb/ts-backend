@@ -1,0 +1,3 @@
+- Use npm scripts, not `npx`. Run `npm run check` (typecheck + lint + format:check + test) and confirm green before claiming done.
+- Throw `AppError` subclasses — don't return error objects or call `c.json` for errors. The `onError` handler in [src/api/api.ts](src/api/api.ts) maps them.
+- Layers go `api → services → repositories` and depend in that direction only. Routes do protocol work and delegate; services hold business logic and never import from `api/`.
